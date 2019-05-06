@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+//declaring template
+template<typename t,typename n>
+//function to get maximum
+t GetMax(t a,n b)
+{
+	if(a>b)
+	{
+		return a;
+	}
+	return b;
+}
+//declaring template
+template<typename t1,typename t2>
+t1 GetMin(t1 a,t2 b)
+{
+	if(a<b)
+	{
+		return a;
+	}
+	return b;
+}
+//first main
+//int main () 
+//{
+//  int i=5, j=6, k;
+//  long l=10, m=5, n;
+//  k=GetMax(i,j);
+//  n=GetMin(l,m);
+//  cout << k << endl;
+//  cout << n << endl;
+//  return 0;
+//}
+//second main
+int main () 
+{
+  char i='Z';
+  int  j=6, k;
+  long l=10, m=5, n;
+  k=GetMax(i,m);
+  n=GetMin(j,l);
+  cout << k << endl;
+  cout << n << endl;
+  return 0;
+}
+ 
+
